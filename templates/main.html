@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>English Word Count</title>
+
+    <!-- Bootstrap -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <center>
+        <h1>English Word Count</h1>
+        <div class="form-group">
+            <form method="POST" action="/">
+                <textarea name="text" cols="100" rows="5" placeholder="I love pullups!">{{sentence}}</textarea><br>
+                <input class="btn btn-primary" name="text" type="submit" value="Count Words">
+            </form><br>
+            <font size="5">{{total}} words</font>
+    </center>
+
+</body>
+
+</html>
